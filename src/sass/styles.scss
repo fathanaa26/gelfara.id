@@ -1,0 +1,57 @@
+@use 'base.scss';
+
+html,body{
+    margin: 0;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .navbarFlex{
+        background-color: base.$bg-color;
+        color: base.$white;
+        height: 36px;
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        padding: 24px 0px;
+        align-items: center;
+        justify-content: center;
+        filter: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
+    }
+    .navbarItem{
+        font-family: base.$primary-font;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        width: auto;
+        height: fit-content;
+        color: base.$white;
+        background-color: base.$grey;
+        font-size: 12px;
+    
+    }
+}
+
+.gelfara{
+    font-family: base.$primary-font;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+.logo{
+    fill: base.$primary-color;
+    padding-right: 5px;
+}
+
+
+.chevron{
+    stroke: base.$grey;
+    width: 20px;
+    height: 24px;
+    padding: 8px;
+}
+
