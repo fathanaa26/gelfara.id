@@ -7,8 +7,7 @@ html,body{
 .navbar{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-
+    justify-content: center;    
     .navbarFlex{
         background-color: base.$bg-color;
         color: base.$white;
@@ -32,7 +31,6 @@ html,body{
         color: base.$white;
         background-color: base.$grey;
         font-size: 12px;
-    
     }
 }
 
@@ -47,7 +45,6 @@ html,body{
     padding-right: 5px;
 }
 
-
 .chevron{
     stroke: base.$grey;
     width: 20px;
@@ -55,3 +52,13 @@ html,body{
     padding: 8px;
 }
 
+@media (min-width:  620px){
+    .navbar{
+        .navbarFlex{
+                    
+        }
+    }
+    .chevron{
+        display: none;
+    }
+}

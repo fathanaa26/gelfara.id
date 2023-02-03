@@ -1,23 +1,17 @@
 import * as React from "react"
 import "../sass/styles.scss"
-
-const item = [
-  "Collaboration",
-  "Article",
-  "Research",
-  "About"
-]
+import NavbarItems from "../components/Navbar"
+import NavbarHeader from "../components/NavbarHeader"
+import ToggleVisibility from "../components/ToggleVisibility"
 
 const Navbar = () => {
   
   return (
-    <div className="navbar">
-        <div className="navbarItem">
-            <p>{item[0]}</p>
-            <p>{item[1]}</p>
-            <p>{item[2]}</p>
-            <p>{item[3]}</p>
-        </div>
+    <div>
+      <NavbarHeader/>
+      <ToggleVisibility>
+        <NavbarItems/>
+      </ToggleVisibility>  
     </div>
   )
 }
